@@ -1,24 +1,276 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 17.5 : El Documento de Diseño del Director</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 17.5 : El Documento de Diseño del Director</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Expandir un 'pitch' conceptual a un Documento de Diseño de Juego (GDD) detallado.</li>
+                                        <li>Especificar mecánicas, narrativa, estética y plan de trabajo de un proyecto.</li>
+                                        <li>Utilizar un LLM (Xolo) como asistente avanzado para la estructuración y redacción técnica del GDD.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización del rol de productor y escritor técnico.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al GDD como "fuente de la verdad".</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición de la estructura profesional de un GDD.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución del workflow de redacción, co-escritura con IA y finalización del GDD.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Presentación cruzada de las secciones más destacadas del GDD.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Documento de Diseño de Juego (GDD) de 2-3 páginas que detalla el proyecto final del equipo, incluyendo las 5 secciones clave: Resumen, Concepto, Mecánicas, Narrativa y Dirección de Arte.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Pitch Decks de la Misión 17.</li>
+                                        <li>Acceso a un editor de texto o herramienta de presentaciones (ej. Google Docs/Slides).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Xolo está preparado para explicar la estructura de un GDD y actuar como asistente de redacción.</li>
+                                                <li>Tener una plantilla de GDD simple lista (opcional).</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Prepararse para guiar una sesión intensiva de escritura técnica y planificación, fomentando la especificidad en las descripciones de los alumnos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional y enmarcar la sesión como un ejercicio de producción y escritura técnica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: traducir la visión a un plan de acción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Directores. Su 'pitch' fue aprobado. Tienen la visión. Ahora, deben traducirla a un plan de acción para su equipo. Una idea sin un plan detallado es solo un deseo. Hoy, se convierten en productores y escritores técnicos. Elaborarán el Documento de Diseño de Juego (GDD), el mapa que guiará toda su producción."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 17.5. Ya conocen el protocolo para iniciar su diálogo con Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el GDD como la "fuente de la verdad" en el desarrollo de software.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce la importancia y el propósito del Documento de Diseño de Juego (GDD).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión de práctica de planificación extendida. En la industria, antes de escribir una sola línea de código, se crea un GDD. Este documento es la 'fuente de la verdad' para todo el equipo. Describe en detalle cada aspecto del juego o experiencia. Hoy, tomarán su pitch y, con la ayuda de Xolo, lo expandirán a un GDD de 2-3 páginas."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total propiedad: <strong>'Yo puedo crear un Documento de Diseño de Juego (GDD) detallado, especificando las mecánicas, la narrativa y la estética de mi proyecto, y usar una IA como asistente de estructuración y redacción.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que aprendan la estructura estándar de un GDD y cómo colaborar con Xolo para su redacción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo de aprendizaje con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Un buen GDD es claro, conciso y completo. Para aprender a crearlo, consulten a su Asistente de Producción. Díganle a Xolo: <strong>'Xolo, como mi Asistente de Producción y Escritor Técnico, explícame la estructura estándar de un GDD y cómo puedes ayudarme a redactarlo.'</strong> Él les dará las 5 secciones clave y les explicará cómo puede refinar el lenguaje de cada sección para que sea más profesional."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de expandir el pitch a un GDD detallado en colaboración con Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Redacción del GDD ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos comienzan a escribir las secciones del GDD, expandiendo su pitch inicial.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Abran un documento de texto. Usando la idea de su pitch y la estructura que Xolo les dio, comiencen a desarrollar cada una de las secciones del GDD. No se preocupen por la redacción perfecta ahora; enfóquense en volcar las ideas."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diálogo de Co-escritura con Xolo ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos usan a Xolo como asistente para refinar la redacción y estructurar ideas complejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Sean específicos. No escriban 'un puzzle difícil', describan el puzzle. No escriban 'una atmósfera misteriosa', describan los elementos que la crean. Si se atascan en una sección, como la narrativa, pídanle ayuda a Xolo. Denle la idea general y él les ayudará a estructurarla usando frameworks que ya conocen, como el de Tres Actos. Usen a Xolo para profesionalizar su redacción."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Revisión y Finalización ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los equipos realizan una revisión final de su GDD para asegurar la coherencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Realicen una lectura final de su GDD. Asegúrense de que todas las secciones son coherentes entre sí. ¿La dirección de arte apoya la narrativa? ¿Las mecánicas encajan con el concepto del juego? Este documento es su entregable final. Asegúrense de que esté completo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la presentación de las secciones destacadas de los GDDs de cada equipo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación de Secciones Clave (Share) ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador modera mientras cada equipo comparte una sección de su GDD.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el Gnius STORM. Hoy no presentaremos los GDDs completos. En su lugar, cada equipo compartirá durante 60 segundos la sección de su documento de la que se sienta particularmente orgulloso. Puede ser la descripción de una mecánica, la sinopsis de la historia o la dirección de arte. Expliquen por qué es una sección clave de su proyecto."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador concluye la sesión, enfatizando el GDD como la brújula del proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han creado el documento más importante de cualquier proyecto de desarrollo. Este GDD es su brújula. Cuando tengan dudas en las próximas semanas, vuelvan a él. La planificación rigurosa es el mejor antídoto contra el caos en la producción. A partir de la próxima sesión, comienza el desarrollo ágil. Excelente trabajo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
